@@ -1,3 +1,5 @@
 cherrypy
 geopy
 peewee
+fastapi
+uvicorn
