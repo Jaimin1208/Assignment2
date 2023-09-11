@@ -78,6 +78,7 @@ class Craigslist(object):
 
            
 if __name__=='__main__':
+    cherrypy.config.update({'server.socket_port': 10001}) 
     cherrypy.quickstart(Craigslist())
 
 

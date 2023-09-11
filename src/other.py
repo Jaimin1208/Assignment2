@@ -6,7 +6,7 @@ filee=open("../data/data.json")
 filee=json.load(filee)  
 def connection():
 
-    db = SqliteDatabase('Craigslist.db')
+    db = SqliteDatabase('../data/Craigslist.db')
     class Item(Model):
         id=TextField(primary_key=True)
         latitude=FloatField()
@@ -21,9 +21,9 @@ def connection():
 
     db.connect()
 
-    #inserting into database
+    # inserting into database
 
-    db.create_tables([Item])
+    # db.create_tables([Item])
     # for element in filee:
     #     Item.create(id=element["id"] , latitude=element["loc"][0], longitude=element["loc"][1],userId=element["userId"], 
     #                 description=element["description"] , price=element["price"] ,status=element["status"])
